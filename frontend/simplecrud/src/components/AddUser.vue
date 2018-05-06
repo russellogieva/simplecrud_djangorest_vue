@@ -1,7 +1,7 @@
 <template lang="pug">
   div.container
     div
-
+      h1 Add new user
       el-form(:model="ruleForm", :rules="rules", ref="ruleForm", label-width="180px" class="bord")
         el-form-item(label="Username", prop="username" )
           el-input(v-model="ruleForm.username", style="width:240px")

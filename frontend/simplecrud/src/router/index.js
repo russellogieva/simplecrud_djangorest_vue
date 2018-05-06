@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import UserList from '@/components/UserList'
 import AddUser from '@/components/AddUser'
+import DeleteUser from '@/components/UserDelete'
 
 Vue.use(Router)
 
@@ -13,9 +14,14 @@ export default new Router({
       component: UserList
     },
     {
-      path: '/adduser',
+      path: '/add',
       name: 'AddUser',
       component: AddUser
+    },
+    {
+      path: '/:user_id/delete',
+      name: 'DeleteUser',
+      component: DeleteUser
     }
   ]
 })

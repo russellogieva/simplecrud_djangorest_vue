@@ -22,7 +22,7 @@
       el-table-column(label="Operations")
         template(slot-scope="scope")
           el-button(size="mini", @click="updateUser(scope.row.id)", icon="el-icon-edit")
-          el-button(size="mini", type="danger", @click="deleteUser(scope.row.id)") Delete
+          el-button(size="mini", type="danger", @click="openDelete(scope.row.id)") Delete
 
     div(style="margin-top: 20px")
       el-button(type="info" plain, @click='getUsers', icon="el-icon-refresh")
@@ -80,13 +80,9 @@ export default {
         .catch(error => console.log(error))
     },
 
-    deleteUser (id) {
+    openDelete (id) {
       console.log(id)
-      HTTP.delete(`/users/${id}/`)
-        .then(res => {
-          this.getUsers()
-        })
-        .catch(error => console.log(error))
+      this.$router.push({name: 'DeleteUser', params: {user_id: id}})
     },
     openAddUser () {
       this.$router.push({name: 'AddUser'})

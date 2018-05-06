@@ -49,6 +49,11 @@ body {
   background-color: white;
 }
 
+h1 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
