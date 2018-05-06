@@ -92,7 +92,8 @@ export default {
 .bord {
   border: 2px solid rgba(93, 93, 93, 0.39);
   border-radius: 5px;
-  padding-top: 25px;
+  padding: 25px 20px 20px 0px;
+  width: 540px;
 }
 
 </style>

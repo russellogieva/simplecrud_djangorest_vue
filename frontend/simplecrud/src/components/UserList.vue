@@ -21,7 +21,7 @@
           disable-transitions) {{scope.row.role}}
       el-table-column(label="Operations")
         template(slot-scope="scope")
-          el-button(size="mini", @click="updateUser(scope.row.id)", icon="el-icon-edit")
+          el-button(size="mini", @click="openUpdate(scope.row.id , scope.row.username, scope.row.email, scope.row.role)", icon="el-icon-edit")
           el-button(size="mini", type="danger", @click="openDelete(scope.row.id)") Delete
 
     div(style="margin-top: 20px")
@@ -71,13 +71,9 @@ export default {
       return row.role === value
     },
 
-    updateUser (id) {
-      console.log(id)
-      HTTP.put(`/users/${id}/`)
-        .then(res => {
-          this.getUsers()
-        })
-        .catch(error => console.log(error))
+    openUpdate (id, username, email, role) {
+      console.log(id, username)
+      this.$router.push({name: 'UpdateUser', params: {user_id: id, user_name: username, user_email: email, user_role: role}})
     },
 
     openDelete (id) {

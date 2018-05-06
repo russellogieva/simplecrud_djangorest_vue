@@ -21,7 +21,7 @@ export default {
     deleteUser () {
       var userId = this.$route.params.user_id
       console.log(userId)
-      HTTP.delete(`/users/${userId}/`)
+      HTTP.delete('/users/' + userId + '/')
         .then(res => {
           this.$message({
             message: 'User deleted.',
