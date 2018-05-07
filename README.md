@@ -48,8 +48,6 @@ python backend/manage.py runserver
 Frontend:  http://localhost:8080
 Backend: http://localhost:8000/
 
-For good work go to http://localhost:8000/api/ and add new role(admin or user) 
-
 ![alt text](https://github.com/skortabeast/simplecrud_djangorest_vue/blob/master/main_form.png)
 ![alt text](https://github.com/skortabeast/simplecrud_djangorest_vue/blob/master/add_form.png)
 ![alt text](https://github.com/skortabeast/simplecrud_djangorest_vue/blob/master/delete_page.png)
