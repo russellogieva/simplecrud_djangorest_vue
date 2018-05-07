@@ -1,4 +1,3 @@
-=====
 Simple crud app with Django Rest, Vue.js, Element UI
 =====
 
