@@ -10,6 +10,9 @@ For install and run example use (for run bash files use Cmder)
 git clone https://github.com/skortabeast/simplecrud_djangorest_vue.git
 ```
 
+```zsh
+cd django-vue-simplenote
+```
 
 Run frontend side:
 ```zsh
