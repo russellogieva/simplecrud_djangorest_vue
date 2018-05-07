@@ -1,3 +1,4 @@
 #!/bin/bash
 cd frontend/simplecrud
-yarn install & yarn run dev
+yarn install
+yarn run dev
