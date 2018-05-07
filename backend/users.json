@@ -1,0 +1,43 @@
+[
+  {
+    "model": "listofusers.users",
+    "pk": 1,
+    "fields": {
+      "username": "ivanov",
+      "email": "ivanov@gmail.com",
+      "created_at": "2018-05-07",
+      "role": "1"
+    }
+  },
+   {
+    "model": "listofusers.users",
+    "pk": 2,
+    "fields": {
+      "username": "petrov",
+      "email": "petrov@gmail.com",
+      "created_at": "2018-05-07",
+      "role": "2"
+    }
+  },
+  {
+    "model": "listofusers.users",
+    "pk": 3,
+    "fields": {
+      "username": "jack",
+      "email": "jack@gmail.com",
+      "created_at": "2018-05-07",
+      "role": "2"
+    }
+  },
+    {
+    "model": "listofusers.users",
+    "pk": 4,
+    "fields": {
+      "username": "john",
+      "email": "john@gmail.com",
+      "created_at": "2018-05-07",
+      "role": "3"
+    }
+  }
+]
+

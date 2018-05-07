@@ -59,7 +59,7 @@ export default {
           HTTP.post('/users/', this.ruleForm)
             .then((response) => {
               this.$message({
-                message: 'User added.',
+                message: 'User added and role created',
                 type: 'success'
               })
               this.$router.push({name: 'UserList'})

@@ -9,7 +9,6 @@ class Role(models.Model):
     def __str__(self):
         return self.rolename
 
-
 class Users(models.Model):
     username = models.CharField(max_length=255)
     email = models.CharField(max_length=255)

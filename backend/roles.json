@@ -1,0 +1,23 @@
+[
+  {
+    "model": "listofusers.role",
+    "pk": 1,
+    "fields": {
+      "rolename": "admin"
+    }
+  },
+  {
+    "model": "listofusers.role",
+    "pk": 2,
+    "fields": {
+      "rolename": "user"
+    }
+  },
+  {
+    "model": "listofusers.role",
+    "pk": 3,
+    "fields": {
+      "rolename": "manager"
+    }
+  }
+]
