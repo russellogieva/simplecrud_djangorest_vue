@@ -2,7 +2,7 @@
 Simple crud app with Django Rest, Vue.js, Element UI
 =====
 
-## For install and run example use (forrun bash files use Cmder)
+For install and run example use (for run bash files use Cmder)
 -----------
 
 ## How to run:
