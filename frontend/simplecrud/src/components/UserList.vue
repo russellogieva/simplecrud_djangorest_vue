@@ -49,7 +49,7 @@ export default {
     getUser () {
       var url = '/users/'
       if (this.search_result !== '' || this.search_result !== null) {
-        url = `/users/?search=${this.search_result}`
+        url = `/users/?username=${this.search_result}`
       }
       HTTP.get(url)
         .then(res => {
